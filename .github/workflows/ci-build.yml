@@ -1,0 +1,40 @@
+name: Deployment with build
+
+on:
+  push:
+    branches: [ build ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: install npm packages
+      run: cd htdocs/wp-content/themes/mytheme-sass/ && npm install
+    - name: build scss
+      run: cd htdocs/wp-content/themes/mytheme-sass/ && npm run compile:build
+    - name: make bundle
+      run: cd htdocs/wp-content/themes/mytheme-sass/ && npm run bundle
+
+    - name: add deploy_key
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        echo "$DEPLOY_KEY" > "$HOME/deploy_key"
+        chmod 600 "$HOME/deploy_key"
+
+    - name: rsync files
+      run: |
+        cd htdocs && 
+        rsync -avhz -e "ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key" wp-content/themes/_s.zip <USERNAME>@<SERVER>:<IHR_VERZEICHNIS>/wp-content/themes/_s.zip
+
+    - name: install theme
+      run: |
+        cd htdocs && 
+        ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key <USERNAME>@<SERVER> "cd <IHR_VERZEICHNIS>/wp-content/themes/ && wp theme install _s.zip --force"
+

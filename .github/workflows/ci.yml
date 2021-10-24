@@ -1,0 +1,22 @@
+name: Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: add deploy_key
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        echo "$DEPLOY_KEY" > "$HOME/deploy_key"
+        chmod 600 "$HOME/deploy_key"
+    - name: rsync files
+      run: |
+        cd htdocs && rsync -avhz -e "ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key" wp-content/themes/mytheme <USERNAME>@<SERVER>:<IHR_VERZEICHNIS>/wp-content/themes/mytheme
