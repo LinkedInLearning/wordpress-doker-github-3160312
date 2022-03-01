@@ -1,10 +1,10 @@
-# [DE-Kursname hier eintragen]
+# Wordpress: Workflow mit Docker und Github optimieren
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `Wordpress: Workflow mit Docker und Github optimieren`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-[![COURSENAME](COURSEIMAGE)](LICOURSEURL)![Building a GraphQL Project with React.js][lil-thumbnail-url] 
+![COURSENAME][lil-thumbnail-url] 
 
-[COURSEDESCRIPTION]
+Lernen Sie in diesem Videokurs ein professionelles Setup für die WordPress-Entwicklung kennen: Thomas Rose demonstriert Ihnen, wie Sie eine lokale Entwicklungsumgebung mit Docker einrichten, die die gleichen Einstellungen hat wie der Live-Server und auch zu installierende Software. Zudem bringt er eine Versionskontrolle mit Git und Continious Deployment mit Github-Actions ins Spiel. Sehen Sie, wie in einem strukturierten Deployment-Prozess Daten zentral über github auf den Server hochgeladen werden. Sobald neuer Code gepushet wird, startet ein Workflow mit der Kompilierung und Veröffentlichung auf dem Live-Server.
 
 ## Anleitung
 
@@ -35,8 +35,7 @@ Weitere Befehle siehe Datei _Makefile_.
 
 **Thomas Rose**
 
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
-Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose?u=104) an.
-
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+[lil-course-url]: https://www.linkedin.com/learning/wordpress-fur-entwickler-workflow-mit-docker-und-github-optimieren
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQH_9GeqCbk2Lw/learning-public-crop_675_1200/0/1646128910418?e=1646226000&v=beta&t=Zw26KSilFsiudXcfbPpOF2hikj1WnZztnbJnCVM_3sY
