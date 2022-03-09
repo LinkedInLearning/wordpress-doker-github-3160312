@@ -2,7 +2,7 @@
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `Wordpress: Workflow mit Docker und Github optimieren`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-![COURSENAME][lil-thumbnail-url] 
+![Wordpress: Workflow mit Docker und Github optimieren][lil-thumbnail-url] 
 
 Lernen Sie in diesem Videokurs ein professionelles Setup für die WordPress-Entwicklung kennen: Thomas Rose demonstriert Ihnen, wie Sie eine lokale Entwicklungsumgebung mit Docker einrichten, die die gleichen Einstellungen hat wie der Live-Server und auch zu installierende Software. Zudem bringt er eine Versionskontrolle mit Git und Continious Deployment mit Github-Actions ins Spiel. Sehen Sie, wie in einem strukturierten Deployment-Prozess Daten zentral über github auf den Server hochgeladen werden. Sobald neuer Code gepushet wird, startet ein Workflow mit der Kompilierung und Veröffentlichung auf dem Live-Server.
 
@@ -37,5 +37,5 @@ Weitere Befehle siehe Datei _Makefile_.
 
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
-[lil-course-url]: https://www.linkedin.com/learning/wordpress-fur-entwickler-workflow-mit-docker-und-github-optimieren
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQH_9GeqCbk2Lw/learning-public-crop_675_1200/0/1646128910418?e=1646226000&v=beta&t=Zw26KSilFsiudXcfbPpOF2hikj1WnZztnbJnCVM_3sY
+[lil-course-url]: https://www.linkedin.com/learning/wordpress-fur-entwickler-workflow-mit-docker-und-github-optimieren/
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQH_9GeqCbk2Lw/learning-public-crop_675_1200/0/1646128910418?e=1646899200&v=beta&t=gdURVaG6NSqnHmoFgCHaPWsehaD5Vybjp2KbIXtjrRM
