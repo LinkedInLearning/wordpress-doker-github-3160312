@@ -38,4 +38,4 @@ Weitere Befehle siehe Datei _Makefile_.
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/thomas-rose) an.
 
 [lil-course-url]: https://www.linkedin.com/learning/wordpress-fur-entwickler-workflow-mit-docker-und-github-optimieren/
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQH_9GeqCbk2Lw/learning-public-crop_675_1200/0/1646128910418?e=1646899200&v=beta&t=gdURVaG6NSqnHmoFgCHaPWsehaD5Vybjp2KbIXtjrRM
+[lil-thumbnail-url]: https://cdn.lynda.com/course/3160312/3160312-1646128203619-16x9.jpg
